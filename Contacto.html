@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Fútbol</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- Encabezado con logo y navegación -->
+    <header>
+        <div class="logo">
+            <h1>InfoFutbol Argentino</h1>
+            <img src="Logo_Liga_Profesional_de_Fútbol_(Argentina)-chica.png" alt="Futbol Argentino">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Equpos</a></li>
+                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="/submit" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="Correo">Correo electronico:</label>
+        <input type="text" id="Correo" name="Correo" required>
+
+        <label for="Asunto">Asunto:</label>
+        <input type="text" id="Asunto" name="Asunto" required>
+
+        <label for="Mensaje">Mensaje:</label>
+        <input type="text" id="Mensaje" name="Mensaje" required>
+      
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>    
