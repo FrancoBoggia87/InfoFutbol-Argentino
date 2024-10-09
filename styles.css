@@ -42,68 +42,31 @@ nav ul li a:hover {
     color: #f7ca18;
 }
 
-/* Sección de imagen principal (hero) */
-.hero {
-    position: relative;
-    text-align: center;
-    margin-bottom: 30px;
-}
 
-.hero img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; /* Ajusta la imagen al contenedor */
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-}
-
-/* Sección de noticias */
-.noticias {
+/* Sección de equipos */
+.contenedor-equipos {
     padding: 20px;
     text-align: center;
-}
-
-.noticias h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Equipos{
-    display: inline-block;
-    width: 45%;
+    width: 400px;
     margin: 10px;
     background-color: #fff;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Equipos img {
-    width: 30%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50px;
-    
-}
+
 
 .Equipos h4 {
     font-size: 1.5rem;
@@ -112,37 +75,6 @@ nav ul li a:hover {
 
 .Equipos p {
     margin-top: 10px;
-}
-
-/* Sección de partidos */
-.partidos {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.partidos h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.partido-item {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.partido-item h4 {
-    font-size: 1.3rem;
-}
-
-.partido-item p {
-    font-size: 1rem;
-    color: #555;
 }
 
 /* Estilos del pie de página */
@@ -177,8 +109,12 @@ footer .social-media li a:hover {
 .Equipos{
     background-color: #b1afaf;
 }
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
 form{
-    display: inline-block;
     padding: 50px;
     background-color: #4CAF50;
     color: white;
@@ -186,7 +122,26 @@ form{
     text-decoration: none;
     border-radius: 5px;
     width: 300px;
-    margin: 50%;
     border-top: 10%;
     
+}
+
+.escudo{
+    height: 160px;
+    width: 160px;
+    border-style: solid;
+    border-width: 3px;
+    background-color: #333;
+}
+
+div.escudo img{
+    height: 150px;
+
+}
+
+.infoEquipos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    justify-content:center;
 }

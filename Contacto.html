@@ -16,30 +16,38 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Equpos</a></li>
-                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Equipos por regiones</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
-    <form action="/submit" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-      
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" required>
-
-        <label for="Correo">Correo electronico:</label>
-        <input type="text" id="Correo" name="Correo" required>
-
-        <label for="Asunto">Asunto:</label>
-        <input type="text" id="Asunto" name="Asunto" required>
-
-        <label for="Mensaje">Mensaje:</label>
-        <input type="text" id="Mensaje" name="Mensaje" required>
-      
-        <input type="submit" value="Enviar">
-      </form>
+    <div class="formulario">
+        <form action="/submit" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+    
+            <label for="Correo">Correo electronico:</label>
+            <input type="text" id="Correo" name="Correo" required>
+    
+            <label for="Asunto">Asunto:</label>
+            <input type="text" id="Asunto" name="Asunto" required>
+    
+            <label for="Mensaje">Mensaje:</label>
+            <input type="text" id="Mensaje" name="Mensaje" required>
+          
+            <input type="submit" value="Enviar">
+          </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 InfoFútbol Argentino. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
 </body>
 </html>    
