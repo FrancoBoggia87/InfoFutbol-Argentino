@@ -23,9 +23,9 @@
                     <div class="submenu">
                         <a href="#">Centro</a>
                         <a href="">Cuyo</a>
-                        <a href="">Noreste</a>
-                        <a href="">Noroeste</a>
-                        <a href="">Pampa</a>
+                        <a href="nea.html">Noreste</a>
+                        <a href="noa.html">Noroeste</a>
+                        <a href="pampa.html">Pampa</a>
                         <a href="">Patagonia</a>
                         <a href="rmba.html">RMBA</a>
                     </div>
@@ -36,13 +36,19 @@
     </header>
 
     <!-- Sección de noticias destacadas -->
-    <section class="contenedor-equipos">
-        <h3>Clubes Argentinos</h3>
-        <h4>El fútbol argentino visto por regiones</h4>
-        <div class="principal">
-            
+    <div class="contenedor">
+        <div class="carrouselcont">
+            <div class="carrousel-arrow">
+                <img src="img/izq.png" alt="" class="move" onclick="moverIzq()">
+                <img src="img/der.png" alt="" class="move" onclick="moverDer()">
+            </div>
+            <div class="carrousel">
+                <img src="img/CENTRO.png" alt="" class="item" id="item1">
+                <img src="img/CUYO.png" alt="" class="item-selected" id="item2">
+                <img src="img/NEA.png" alt="" class="item" id="item3">
+            </div>
         </div>
-    </section>
+    </div>
 
 
     <!-- Pie de página con información adicional -->
@@ -54,6 +60,7 @@
             <li><a href="#">Instagram</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
