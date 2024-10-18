@@ -19,12 +19,12 @@
                 <li class="menu">
                     <a href="#">Clubes por región</a>
                     <div class="submenu">
-                        <a href="#">Centro</a>
-                        <a href="">Cuyo</a>
+                        <a href="centro.html">Centro</a>
+                        <a href="cuyo.html">Cuyo</a>
                         <a href="nea.html">Noreste</a>
                         <a href="noa.html">Noroeste</a>
                         <a href="pampa.html">Pampa</a>
-                        <a href="">Patagonia</a>
+                        <a href="patagonia.html">Patagonia</a>
                         <a href="rmba.html">RMBA</a>
                     </div>
                 </li>
@@ -33,25 +33,40 @@
         </nav>
     </header>
     <div class="formulario">
-        <form action="/submit" method="POST">
+        <form novalidate autocomplete="off" action="" onsubmit= "return validar()">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" >
+            <span id="errNombre" style= "display: none;" class="error">Nombre no valido</span>
+            <br>
           
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" >
+            <span id="errTelefono" style= "display: none;" class="error" >Numero no valido</span>
+            <br>
     
-            <label for="Correo">Correo electronico:</label>
-            <input type="text" id="Correo" name="Correo" required>
+            <label for="correo">Correo electronico:</label>
+            <input type="text" id="correo" name="correo" >
+            <span id="errCorreo" style= "display: none;" class="error">Email no valido</span>
+            <br>
     
-            <label for="Asunto">Asunto:</label>
-            <input type="text" id="Asunto" name="Asunto" required>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="Asunto" >
+            <span id="errAsunto" style= "display: none;" class="error">Ingrese un asunto</span>
+            <br>
     
-            <label for="Mensaje">Mensaje:</label>
-            <input type="text" id="Mensaje" name="Mensaje" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea type="text" id="mensaje" name="Mensaje" class="mensaje" ></textarea>
+            <span id="errMensaje" style= "display: none;"class="error">Ingrese un mensaje</span>
+            <br>
           
             <input type="submit" value="Enviar">
           </form>
+          
+          <div id="resultado" style= "display: none;" class="registro">
+            <h2>Datos ingresados</h2>
+         </div>
     </div>
+           
     <footer>
         <p>&copy; 2024 InfoFútbol Argentino. Todos los derechos reservados.</p>
         <ul class="social-media">
@@ -60,5 +75,6 @@
             <li><a href="#">Instagram</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>    
