@@ -230,7 +230,6 @@ input {
 
 .registro {
     width: 600px;
-
 }
 
 .registro p {
@@ -348,6 +347,9 @@ input {
         width: 100%;
     }
     .carrousel{
+        width: 100%;
+    }
+    .registro {
         width: 100%;
     }
 }
