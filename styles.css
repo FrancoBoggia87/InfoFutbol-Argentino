@@ -79,6 +79,21 @@ nav ul li a:hover {
 }
 
 /* Sección de equipos */
+.parrafo{
+    padding: 0px 200px;
+    font-size: 25px;
+    text-align: center;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
 .contenedor-equipos {
     padding: 20px;
     text-align: center;
@@ -99,13 +114,13 @@ nav ul li a:hover {
     margin: 10px;
     background-color: #b1afaf;
     padding: 15px;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .Equipos span{
@@ -113,7 +128,6 @@ nav ul li a:hover {
 }
 .Equipos h4 {
     font-size: 1.4rem;
-    margin-top: 5px;
 }
 
 .Equipos p {
@@ -172,7 +186,6 @@ footer .social-media li a:hover {
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
-   
 }
 
 form {
@@ -180,12 +193,10 @@ form {
     background-color: #333;
     color: white;
     text-align: center;
-    text-decoration: none;
     border-radius: 5px;
     display: flex ;
     flex-direction: column;
     justify-content: center;
-    border-top: 10%;
     width: 600px;
     height: 800px;
     align-items: center;
@@ -197,8 +208,6 @@ input{
     height: 50px;
     font-size: 20px;
     padding:0px 10px;
-  
-
 }
 .mensaje{
     height: 300px;
@@ -215,6 +224,9 @@ input{
 }
 .registro p{
    padding: 10px;
+}
+.registro p span {
+    font-weight: bold;
 }
 
 @media (max-width:1300px){
@@ -234,19 +246,23 @@ input{
     width: 100%;
     height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
 }
 
 .carrouselcont{
-    width: 900px;
+    width: 80%;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
 .carrousel-arrow{
-    width: 900px;
+    width: 80%;
     height: 250px;
     position: absolute;
     z-index: 20;
@@ -257,7 +273,7 @@ input{
 
 .carrousel {
     background-color:#333;
-    width: 900px;
+    width: 80%;
     height: 250px;
     display: flex;
     align-items: center;

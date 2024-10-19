@@ -34,28 +34,29 @@
     </header>
     <div class="formulario">
         <form novalidate autocomplete="off" action="" onsubmit= "return validar()">
+            
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" >
+            <input type="text" id="nombre" name="nombre" onfocus="limpiarCampo(event)">
             <span id="errNombre" style= "display: none;" class="error">Nombre no valido</span>
             <br>
           
             <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" >
-            <span id="errTelefono" style= "display: none;" class="error" >Numero no valido</span>
+            <input type="text" id="telefono" name="telefono" onfocus="limpiarCampo(event)">
+            <span id="errTelefono" style= "display: none;" class="error">Numero no valido</span>
             <br>
     
             <label for="correo">Correo electronico:</label>
-            <input type="text" id="correo" name="correo" >
+            <input type="text" id="correo" name="correo" onfocus="limpiarCampo(event)">
             <span id="errCorreo" style= "display: none;" class="error">Email no valido</span>
             <br>
     
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="Asunto" >
+            <input type="text" id="asunto" name="Asunto" onfocus="limpiarCampo(event)">
             <span id="errAsunto" style= "display: none;" class="error">Ingrese un asunto</span>
             <br>
     
             <label for="mensaje">Mensaje:</label>
-            <textarea type="text" id="mensaje" name="Mensaje" class="mensaje" ></textarea>
+            <textarea type="text" id="mensaje" name="Mensaje" class="mensaje" onfocus="limpiarCampo(event)"></textarea>
             <span id="errMensaje" style= "display: none;"class="error">Ingrese un mensaje</span>
             <br>
           
