@@ -45,14 +45,14 @@ nav ul {
     font-size: 20px;
 }
 
-nav ul li a {
+nav ul li a,nav ul li {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
 }
 
-nav ul li a:hover {
+nav ul li:hover,a:hover {
     color: #f7ca18;
 }
 
