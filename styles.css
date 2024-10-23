@@ -299,6 +299,13 @@ input {
     border-style: outset;
     border-width: 5px;
 }
+.itemRegistr {
+    height: 200px;
+    border-radius: 100px;
+    border-style: outset;
+    border-width: 5px;
+   
+}    
 
 .item-selected {
     height: 240px;
